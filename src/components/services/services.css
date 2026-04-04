@@ -1,0 +1,120 @@
+#services > h3 {
+    text-align: center;
+    color: var(--color-light);
+}
+#services > h1 {
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.services__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem; /* dikurangi biar lebih rapat */
+}
+
+/* CARD */
+.service {
+    background: var(--color-bg-variant);
+    border-radius: 0 0 2rem 2rem;
+    border: 1px solid var(--color-primary);
+    height: fit-content;
+    transition: var(--transition);
+}
+
+.service:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+/* HEADER */
+.service__head {
+    background: var(--color-primary);
+    padding: 1.5rem;
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: 0 2rem 1rem rgba(0,0,0,0.1); /* 🔥 FIX typo */
+}
+
+.service__head h3 {
+    color: var(--color-bg);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* LIST */
+.service__list {
+    padding: 1.8rem;
+}
+
+.service__list li {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 0.7rem;
+    align-items: flex-start;
+}
+
+.service__list-icon {
+    color: var(--color-primary);
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+/* TEXT */
+.service__list li p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* ================= TABLET ================= */
+@media screen and (max-width: 1024px) {
+    .services__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .service {
+        height: auto;
+    }
+}
+
+/* ================= HP ================= */
+@media screen and (max-width: 600px) {
+
+    .services__container {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .service {
+        border-radius: 1.5rem;
+    }
+
+    .service__head {
+        padding: 1.2rem;
+    }
+
+    .service__head h3 {
+        font-size: 1rem;
+    }
+
+    .service__list {
+        padding: 1.2rem;
+    }
+
+    .service__list li p {
+        font-size: 0.85rem;
+    }
+}
+
+/* ================= HP KECIL ================= */
+@media screen and (max-width: 400px) {
+    .service__head h3 {
+        font-size: 0.9rem;
+    }
+
+    .service__list li p {
+        font-size: 0.8rem;
+    }
+}

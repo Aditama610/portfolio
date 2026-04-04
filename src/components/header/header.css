@@ -1,0 +1,160 @@
+header {
+    min-height: 90vh; /* 🔥 ganti dari height */
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+
+/* CONTAINER */
+.header__container {
+    text-align: center;
+    position: relative;
+    margin-top: 2rem;
+}
+
+/* TEXT */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 10px rgba(77, 181, 255, 0.6);
+}
+
+h2 {
+    color: var(--color-primary);
+}
+
+/* CTA */
+.cta {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap; /* 🔥 biar aman di HP */
+}
+
+/* SOCIAL */
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 2rem;
+}
+
+.header__socials::after {
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background-color: var(--color-primary);
+}
+
+/* FOTO */
+.me {
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 20rem;
+    height: 26rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* 🔥 lebih aman */
+    margin-top: 3rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+}
+
+.me img {
+    width: 100%;
+}
+
+/* SCROLL */
+.scroll__down {
+    position: absolute;
+    right: -2rem;
+    bottom: 4rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.85rem;
+}
+
+/* ================= TABLET ================= */
+@media screen and (max-width: 1024px) {
+
+    header {
+        padding-top: 5rem;
+    }
+
+    .me {
+        width: 18rem;
+        height: 24rem;
+    }
+
+    .header__socials {
+        bottom: 1.5rem;
+    }
+}
+
+/* ================= HP ================= */
+@media screen and (max-width: 600px) {
+
+    header {
+        min-height: auto; /* 🔥 penting */
+        padding-top: 4rem;
+    }
+
+    .header__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .text-light {
+        font-size: 0.9rem;
+    }
+
+    /* FOTO jadi normal */
+    .me {
+        position: relative;
+        width: 14rem;
+        height: 18rem;
+        margin: 2rem auto 0;
+        left: auto;
+        transform: none;
+    }
+
+    /* SOCIAL pindah bawah */
+    .header__socials {
+        position: relative;
+        flex-direction: row;
+        margin-top: 1.5rem;
+    }
+
+    .header__socials::after {
+        display: none;
+    }
+
+    /* HILANGKAN SCROLL */
+    .scroll__down {
+        display: none;
+    }
+}
+
+/* ================= HP KECIL ================= */
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .me {
+        width: 12rem;
+        height: 16rem;
+    }
+}

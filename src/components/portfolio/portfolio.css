@@ -1,0 +1,120 @@
+/* TITLE */
+#portfolio > h3 {
+    text-align: center;
+    color: var(--color-light);
+    margin-bottom: 0.5rem; /* 🔥 ganti margin-top */
+}
+
+#portfolio > h1 {
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+}
+
+/* CONTAINER */
+.portfolio__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+/* CARD */
+.portfolio__item {
+    background: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 1.8rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.portfolio__item:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+}
+
+/* IMAGE */
+.portfolio__item-image {
+    border-radius: 1.2rem;
+    overflow: hidden;
+}
+
+.portfolio__item-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* TITLE CARD */
+.portfolio__item h3 {
+    margin: 1rem 0 1.2rem;
+    font-size: 1.05rem;
+}
+
+/* BUTTON */
+.portfolio__item-cta {
+    display: flex;
+    gap: 0.7rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+}
+
+/* ================= TABLET ================= */
+@media screen and (max-width: 1024px) {
+    .portfolio__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .portfolio__item-image img {
+        height: 180px;
+    }
+}
+
+/* ================= HP ================= */
+@media screen and (max-width: 600px) {
+
+    /* 🔥 ini penting banget */
+    #portfolio {
+        padding-top: 2rem;
+    }
+
+    .portfolio__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .portfolio__item {
+        padding: 1rem;
+        border-radius: 1.5rem;
+    }
+
+    .portfolio__item h3 {
+        font-size: 1rem;
+        margin: 0.8rem 0 1rem;
+    }
+
+    .portfolio__item-image img {
+        height: 160px;
+    }
+
+    .portfolio__item-cta {
+        gap: 0.5rem;
+    }
+
+    .portfolio__item-cta .btn {
+        padding: 0.5rem 0.9rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* ================= HP KECIL ================= */
+@media screen and (max-width: 400px) {
+
+    .portfolio__item-image img {
+        height: 140px;
+    }
+
+    .portfolio__item h3 {
+        font-size: 0.9rem;
+    }
+}

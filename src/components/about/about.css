@@ -1,0 +1,164 @@
+/* TITLE */
+#about > h3 {
+    text-align: center;
+    color: var(--color-light);
+    margin-bottom: 0.5rem;
+}
+
+#about > h1 {
+    text-align: center;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+}
+
+/* CONTAINER */
+.about__container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr; /* 🔥 lebih fleksibel */
+    gap: 2.5rem;
+    align-items: center;
+}
+
+/* FOTO */
+.about__me {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 2rem;
+    background: linear-gradient(45deg, transparent, var(--color-primary));
+    padding: 0.5rem;
+}
+
+.about__me-image {
+    width: 100%;
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(8deg);
+    transition: var(--transition);
+}
+
+.about__me-image:hover {
+    transform: rotate(0);
+}
+
+/* CARDS */
+.about__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.about__card {
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.about__card:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+}
+
+.about__icon {
+    color: var(--color-primary);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.about__card h5 {
+    font-size: 0.9rem;
+}
+
+.about__card small {
+    font-size: 0.7rem;
+    color: var(--color-light);
+}
+
+/* TEXT */
+.about__content {
+    text-align: left;
+}
+
+.about__content p {
+    margin: 1.5rem 0;
+    color: var(--color-light);
+    line-height: 1.6;
+}
+
+/* ================= TABLET ================= */
+@media screen and (max-width: 1024px) {
+
+    .about__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .about__me {
+        max-width: 250px;
+    }
+
+    /* 🔥 jadi 2 kolom biar tidak sempit */
+    .about__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about__content {
+        text-align: center;
+    }
+}
+
+/* ================= HP ================= */
+@media screen and (max-width: 600px) {
+
+    #about {
+        padding-top: 2rem; /* 🔥 fix spacing */
+    }
+
+    #about > h1 {
+        font-size: 1.6rem;
+    }
+
+    #about > h3 {
+        font-size: 1rem;
+    }
+
+    .about__me {
+        max-width: 200px;
+        margin-bottom: 1.5rem;
+    }
+
+    /* 🔥 jadi 1 kolom */
+    .about__cards {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .about__card {
+        padding: 1rem;
+    }
+
+    .about__content {
+        padding: 0 0.5rem;
+    }
+
+    .about__content p {
+        font-size: 0.9rem;
+        margin: 1rem 0;
+    }
+}
+
+/* ================= HP KECIL ================= */
+@media screen and (max-width: 400px) {
+
+    .about__me {
+        max-width: 180px;
+    }
+
+    #about > h1 {
+        font-size: 1.4rem;
+    }
+}
