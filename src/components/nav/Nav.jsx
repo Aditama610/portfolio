@@ -42,7 +42,7 @@ function Nav() {
   return (
     <nav>
       <a
-        href="#"
+        href="#header"
         className={activeNav === '#' ? 'active' : ''}
         onClick={() => setActiveNav('#')}
       >
