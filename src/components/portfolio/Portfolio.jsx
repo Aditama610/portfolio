@@ -20,7 +20,7 @@ function Portfolio() {
       image: IMG2,
       title: 'Portfolio 2',
       demo: 'https://www.github.com'
-    }
+    }, // <-- Koma penutup objek ditambahkan di sini
     {
       id: 3,
       image: IMG3,
@@ -55,7 +55,7 @@ function Portfolio() {
           return (
             <article className="portfolio__item" key={data.id}>
               <div className="portfolio__item-image">
-                <img src={data.image} alt="Image 1" />
+                <img src={data.image} alt={data.title} />
               </div>
               <h3>{data.title}</h3>
               <div className="portfolio__item-cta">
