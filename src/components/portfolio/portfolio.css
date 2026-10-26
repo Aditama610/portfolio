@@ -1,4 +1,3 @@
-/* TITLE */
 #portfolio > h3 {
     text-align: center;
     color: var(--color-light);
@@ -11,14 +10,12 @@
     margin-bottom: 2rem;
 }
 
-/* CONTAINER */
 .portfolio__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
-/* CARD */
 .portfolio__item {
     background: var(--color-bg-variant);
     padding: 1.2rem;
@@ -32,7 +29,6 @@
     border-color: var(--color-primary-variant);
 }
 
-/* IMAGE */
 .portfolio__item-image {
     border-radius: 1.2rem;
     overflow: hidden;
@@ -44,13 +40,11 @@
     object-fit: cover;
 }
 
-/* TITLE CARD */
 .portfolio__item h3 {
     margin: 1rem 0 1.2rem;
     font-size: 1.05rem;
 }
 
-/* BUTTON */
 .portfolio__item-cta {
     display: flex;
     gap: 0.7rem;
@@ -58,7 +52,6 @@
     flex-wrap: wrap;
 }
 
-/* ================= TABLET ================= */
 @media screen and (max-width: 1024px) {
     .portfolio__container {
         grid-template-columns: 1fr 1fr;
@@ -70,10 +63,8 @@
     }
 }
 
-/* ================= HP ================= */
 @media screen and (max-width: 600px) {
 
-    /* 🔥 ini penting banget */
     #portfolio {
         padding-top: 2rem;
     }
@@ -107,7 +98,6 @@
     }
 }
 
-/* ================= HP KECIL ================= */
 @media screen and (max-width: 400px) {
 
     .portfolio__item-image img {

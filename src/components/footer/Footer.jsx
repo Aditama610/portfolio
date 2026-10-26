@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { FaFacebook } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
 import { FiInstagram } from 'react-icons/fi'
-import { IoLogoTwitter } from 'react-icons/io'
 import { BsLinkedin } from 'react-icons/bs'
 import { FaArrowUp } from 'react-icons/fa'
 import './footer.css'
@@ -56,7 +55,7 @@ function Footer() {
         </ul>
 
         <div className="footer__socials">
-          <a href="https://www.facebook.com/profile.php?id=61554387782712" target="_blank" rel="noreferrer"><FaFacebook /></a>
+          <a href="https://github.com/Aditama610" target="_blank" rel="noreferrer"><FaGithub /></a>
           <a href="https://www.instagram.com/fadiladit05?igsh=bGdkNWhobHZ2aGJ5" target="_blank" rel="noreferrer"><FiInstagram /></a>
           <a href="https://www.linkedin.com/in/muhammad-fadillah-aditama-2b7ba7355?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noreferrer"><BsLinkedin /></a>
         </div>

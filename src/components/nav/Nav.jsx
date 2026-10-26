@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './nav.css'
 import { AiOutlineHome, AiOutlineUser } from 'react-icons/ai'
 import { BiBook, BiMessageSquareDetail } from 'react-icons/bi'
@@ -6,6 +6,39 @@ import { RiServiceLine } from 'react-icons/ri'
 
 function Nav() {
   const [activeNav, setActiveNav] = useState('#')
+
+  useEffect(() => {
+    const sections = document.querySelectorAll('header, section')
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id')
+            if (id) {
+              setActiveNav(`#${id}`)
+            } else {
+              setActiveNav('#')
+            }
+          }
+        })
+      },
+      {
+        threshold: 0.3,
+      }
+    )
+
+    sections.forEach((section) => {
+      observer.observe(section)
+    })
+
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section)
+      })
+    }
+  }, [])
+
   return (
     <nav>
       <a

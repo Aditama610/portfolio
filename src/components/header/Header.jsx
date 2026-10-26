@@ -38,7 +38,6 @@ function Header() {
 
         <h2>Hello I'm</h2>
 
-        {/* NAMA + EFEK CAHAYA */}
         <h1 className="shimmer-text">
           <motion.span
             initial={{ opacity: 0, y: 30 }}
@@ -49,7 +48,6 @@ function Header() {
           </motion.span>
         </h1>
 
-        {/* TYPING EFFECT */}
         <h3 className="text-light typing">
           {text}<span className="cursor">|</span>
         </h3>

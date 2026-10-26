@@ -8,17 +8,15 @@
     margin-bottom: 1rem;
 }
 
-/* CONTAINER */
 .experience__container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
-/* CARD */
 .experience__container > div {
     background-color: var(--color-bg-variant);
-    padding: 2rem 3rem; /* dikurangi biar ga sempit */
+    padding: 2rem 3rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: all 0.3s ease;
@@ -27,11 +25,7 @@
 .experience__container > div:hover {
     transform: translateY(-8px) scale(1.02);
     border-color: var(--color-primary);
-    
-    /* 🔥 tetap pakai background */
     background: var(--color-bg-variant);
-
-    /* 🔥 efek glow modern */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3),
                 0 0 15px var(--color-primary-variant);
 
@@ -44,7 +38,6 @@
     color: var(--color-primary);
 }
 
-/* CONTENT GRID */
 .experience__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -52,21 +45,18 @@
     column-gap: 1rem;
 }
 
-/* ITEM */
 .experience__details {
     display: flex;
     align-items: flex-start;
     gap: 0.8rem;
 }
 
-/* ICON */
 .experience__details-icon {
     margin-top: 4px;
     color: var(--color-primary);
     flex-shrink: 0;
 }
 
-/* ================= TABLET ================= */
 @media screen and (max-width: 1024px) {
     .experience__container {
         grid-template-columns: 1fr;
@@ -83,7 +73,6 @@
     }
 }
 
-/* ================= HP ================= */
 @media screen and (max-width: 600px) {
 
     .experience__container {
@@ -96,9 +85,8 @@
         border-radius: 1.5rem;
     }
 
-    /* 🔥 INI PALING PENTING */
     .experience__content {
-        grid-template-columns: 1fr; /* jadi 1 kolom */
+        grid-template-columns: 1fr;
         gap: 1.2rem;
     }
 
@@ -115,7 +103,6 @@
     }
 }
 
-/* ================= HP KECIL ================= */
 @media screen and (max-width: 400px) {
     .experience__container > div {
         padding: 1.2rem 0.8rem;

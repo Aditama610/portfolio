@@ -1,4 +1,3 @@
-/* TITLE */
 #contact > h3 {
     text-align: center;
     color: var(--color-light);
@@ -11,12 +10,10 @@
     margin-bottom: 2rem;
 }
 
-/* SECTION SPACING 🔥 */
 #contact {
     padding-top: 3rem;
 }
 
-/* CONTAINER */
 .contact__container {
     width: 70%;
     margin: 0 auto;
@@ -25,7 +22,6 @@
     gap: 2rem;
 }
 
-/* OPTIONS */
 .contact__options {
     display: flex;
     gap: 1rem;
@@ -57,7 +53,6 @@
     font-size: 0.8rem;
 }
 
-/* FORM */
 form {
     display: flex;
     flex-direction: column;
@@ -69,14 +64,12 @@ form {
     margin-top: 0.5rem;
 }
 
-/* efek fokus */
 input:focus,
 textarea:focus {
     border-color: var(--color-primary);
     box-shadow: 0 0 10px var(--color-primary-variant);
 }
 
-/* INPUT */
 input, textarea {
     width: 100%;
     padding: 1.1rem;
@@ -88,7 +81,7 @@ input, textarea {
     font-size: 0.9rem;
 }
 
-/* ================= TABLET ================= */
+
 @media screen and (max-width: 1024px) {
     .contact__container {
         grid-template-columns: 1fr;
@@ -97,7 +90,7 @@ input, textarea {
     }
 }
 
-/* ================= HP ================= */
+
 @media screen and (max-width: 600px) {
 
     #contact {
@@ -123,7 +116,6 @@ input, textarea {
     }
 }
 
-/* ================= HP KECIL ================= */
 @media screen and (max-width: 400px) {
     input, textarea {
         font-size: 0.8rem;

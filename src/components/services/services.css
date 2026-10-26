@@ -11,10 +11,9 @@
 .services__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem; /* dikurangi biar lebih rapat */
+    gap: 2.5rem; 
 }
 
-/* CARD */
 .service {
     background: var(--color-bg-variant);
     border-radius: 0 0 2rem 2rem;
@@ -29,12 +28,11 @@
     cursor: default;
 }
 
-/* HEADER */
 .service__head {
     background: var(--color-primary);
     padding: 1.5rem;
     border-radius: 0 0 2rem 2rem;
-    box-shadow: 0 2rem 1rem rgba(0,0,0,0.1); /* 🔥 FIX typo */
+    box-shadow: 0 2rem 1rem rgba(0,0,0,0.1); 
 }
 
 .service__head h3 {
@@ -43,7 +41,6 @@
     text-align: center;
 }
 
-/* LIST */
 .service__list {
     padding: 1.8rem;
 }

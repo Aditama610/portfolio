@@ -12,13 +12,11 @@ footer {
     transition: all 0.8s ease;
 }
 
-/* SAAT MUNCUL */
 footer.show {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* LOGO */
 .footer__logo {
     font-size: 2.2rem;
     font-weight: 600;
@@ -27,7 +25,6 @@ footer.show {
     color: #38bdf8;
 }
 
-/* MENU */
 .permalinks {
     display: flex;
     flex-wrap: wrap;
@@ -45,7 +42,6 @@ footer.show {
     color: #38bdf8;
 }
 
-/* SOSIAL */
 .footer__socials {
     display: flex;
     justify-content: center;
@@ -61,20 +57,17 @@ footer.show {
     transition: 0.3s;
 }
 
-/* HOVER ICON */
 .footer__socials a:hover {
     background: #38bdf8;
     color: #020617;
     transform: translateY(-5px);
 }
 
-/* COPYRIGHT */
 .footer__copyright {
     color: #94a3b8;
     font-size: 0.8rem;
 }
 
-/* ================= BACK TO TOP ================= */
 .back-to-top {
     position: fixed;
     right: 20px;
@@ -91,19 +84,16 @@ footer.show {
     transition: 0.3s;
 }
 
-/* MUNCUL */
 .back-to-top.show {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* HOVER */
 .back-to-top:hover {
     background: #0ea5e9;
     transform: translateY(-3px);
 }
 
-/* ================= MOBILE ================= */
 @media screen and (max-width: 600px) {
     footer {
         padding: 3rem 1rem;

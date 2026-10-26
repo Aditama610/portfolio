@@ -11,18 +11,15 @@ function Experience() {
 
       <div className="container experience__container">
 
-        {/* FRONTEND */}
         <motion.div
-          className="experience__frontend"
+          className="experience__card"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
           <h3>Frontend Development</h3>
-
           <div className="experience__content">
-
             <motion.article whileHover={{ x: 5 }} className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
@@ -42,6 +39,14 @@ function Experience() {
             <motion.article whileHover={{ x: 5 }} className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
+                <h4>JavaScript</h4>
+                <small className="text-light">Basic</small>
+              </div>
+            </motion.article>
+
+            <motion.article whileHover={{ x: 5 }} className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon" />
+              <div>
                 <h4>Bootstrap</h4>
                 <small className="text-light">Intermediate</small>
               </div>
@@ -54,30 +59,18 @@ function Experience() {
                 <small className="text-light">Basic</small>
               </div>
             </motion.article>
-
-            <motion.article whileHover={{ x: 5 }} className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>React</h4>
-                <small className="text-light">Basic</small>
-              </div>
-            </motion.article>
-
           </div>
         </motion.div>
 
-        {/* BACKEND */}
         <motion.div
-          className="experience__backend"
+          className="experience__card"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          <h3>Backend Development</h3>
-
+          <h3>Backend & Framework</h3>
           <div className="experience__content">
-
             <motion.article whileHover={{ x: 5 }} className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
@@ -89,6 +82,34 @@ function Experience() {
             <motion.article whileHover={{ x: 5 }} className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
+                <h4>Python</h4>
+                <small className="text-light">Basic</small>
+              </div>
+            </motion.article>
+
+            <motion.article whileHover={{ x: 5 }} className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon" />
+              <div>
+                <h4>Laravel</h4>
+                <small className="text-light">Intermediate</small>
+              </div>
+            </motion.article>
+          </div>
+        </motion.div>
+
+        {/* DATABASE */}
+        <motion.div
+          className="experience__card"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: true }}
+        >
+          <h3>Database</h3>
+          <div className="experience__content">
+            <motion.article whileHover={{ x: 5 }} className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon" />
+              <div>
                 <h4>MySQL</h4>
                 <small className="text-light">Experienced</small>
               </div>
@@ -97,11 +118,10 @@ function Experience() {
             <motion.article whileHover={{ x: 5 }} className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
-                <h4>Python</h4>
-                <small className="text-light">Basic</small>
+                <h4>PostgreSQL</h4>
+                <small className="text-light">Intermediate</small>
               </div>
             </motion.article>
-
           </div>
         </motion.div>
 
